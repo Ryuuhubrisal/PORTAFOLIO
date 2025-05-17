@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mí | Ryuuhubrisal</title>
+
+  <!-- Fuentes y librerías -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #0a0a0a;
+      --text-light: #111111;
+      --text-dark: #eeeeee;
+      --primary: #ff0000;
+      --accent: #ff4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .profile-text {
+      text-align: justify;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      line-height: 2rem;
+    }
+
+    .profile-text.animate__animated.animate__fadeInUp {
+      animation-duration: 1.2s;
+    }
+
+    .profile-text h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-text p {
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn, .btn-outline {
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: var(--primary);
+      color: #fff;
+      box-shadow: 0 0 12px var(--primary);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn:hover {
+      background-color: #cc0000;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    #theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    /* Responsive extras */
+    @media (max-width: 600px) {
+      .container {
+        padding: 3rem 1rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn, .btn-outline {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .profile-text {
+        line-height: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <button id="theme-toggle">🌙</button>
+
+  <div class="container">
+    <header>
+      <h1 class="title">Ryuuhubrisal</h1>
+    </header>
+
+    <section class="profile-text animate__animated animate__fadeInUp">
+  <h2>Sobre mí</h2>
+  <p>Mi nombre es Daniel —aunque en el mundo digital me conocen como <strong>Ryuuhubrisal</strong>—. Soy un joven dominicano de 25 años, nacido en Santo Domingo, criado en una familia creyente y forjado por la curiosidad, la escasez y la determinación.</p>
+  
+  <p>Desde muy pequeño me sentí atraído por el misterio de cómo funcionaban las cosas. No crecí con tecnología a mi alcance, pero eso solo intensificó mi deseo de aprender. Cuando acompañaba a mi madre a la <strong>Universidad Autónoma de Santo Domingo (UASD)</strong>, me escabullía en la facultad de informática, donde observaba en silencio cómo los estudiantes programaban. Era solo un niño, sin computadora, pero con una imaginación encendida.</p>
+  
+  <p>Cuando por fin tuve acceso a una laptop vieja —con el teclado dañado y apenas 1GB de RAM— no vi una limitación, vi una oportunidad. Aprendí a usarla con lo poco que funcionaba: instalé <strong>Linux</strong>, programaba en <strong>Bloc de notas</strong>, y exprimía cada recurso al máximo. Esa máquina fue mi primer laboratorio de aprendizaje real.</p>
+  
+  <p>Mi primer celular fue una <strong>BlackBerry 8320</strong>, regalo de mi padre. Luego un <strong>Huawei Y220-U05</strong> cambió mi mundo: descubrí Android, los APK, las ROMs, el kernel de Linux y sistemas como Ubuntu. A los 12 años ya desmontaba dispositivos, dañando algunos, arreglando otros, pero siempre aprendiendo. Cada error era una clase, cada intento fallido me daba más herramientas.</p>
+  
+  <p>Modificaba juegos Java, exploraba servidores, usaba programas como <strong>PowerDirector</strong> para editar, <strong>FileZilla</strong> para subir archivos por <strong>SFTP</strong>, y navegaba foros como <strong>GSMHosting</strong> o canales de YouTube donde encontraba piezas sueltas de conocimiento que yo unía como un rompecabezas. Aprender se volvió una necesidad, una obsesión, una forma de vida.</p>
+  
+  <p><strong>Siempre fui buen estudiante.</strong> Me gradué de una escuela privada con excelentes calificaciones, siendo constantemente <strong>meritorio</strong>. Me apasionaba aprender, y esa pasión no ha cambiado. Hoy estudio por gusto, investigo por naturaleza y creo por vocación.</p>
+  
+  <p>Más adelante me formé en instituciones técnicas como <strong>INFOTEP</strong>, perfeccionando lo que aprendí de manera autodidacta. Actualmente desarrollo <strong>aplicaciones Android, sitios web y soluciones impulsadas por inteligencia artificial</strong>, combinando creatividad, lógica y experiencia.</p>
+  
+  <p>Pero más allá de los logros técnicos, <strong>mi filosofía es clara:</strong></p>
+  <blockquote><em>"El conocimiento sin cuestionamiento es ignorancia."</em></blockquote>
+  
+  <p>No creo en aprender por repetir, sino en comprender, experimentar y transformar. Y mi meta va más allá de lo profesional: <strong>quiero emprender y construir un futuro que me permita devolverle a mi familia lo mucho que hicieron por mí, aun sin tener casi nada.</strong></p>
+  
+  <p>Esta es mi historia: escrita con esfuerzo, teclas rotas, y sueños enteros.</p>
+</section>
+
+
+    <div class="buttons">
+      <a href="index.html#contacto" class="btn">Contáctame</a>
+      <a href="index.html#inicio" class="btn-outline">Volver a la Página</a>
+    </div>
+  </div>
+
+  <script>
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+    let darkMode = prefersDark;
+
+    function setTheme(dark) {
+      root.style.setProperty('--bg', dark ? getComputedStyle(root).getPropertyValue('--bg-dark') : getComputedStyle(root).getPropertyValue('--bg-light'));
+      root.style.setProperty('--text', dark ? getComputedStyle(root).getPropertyValue('--text-dark') : getComputedStyle(root).getPropertyValue('--text-light'));
+      themeToggle.textContent = dark ? '☀️' : '🌙';
+    }
+
+    setTheme(darkMode);
+
+    themeToggle.addEventListener('click', () => {
+      darkMode = !darkMode;
+      setTheme(darkMode);
+    });
+
+    particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json', function() {
+      console.log('particles.js cargado');
+    });
+  </script>
+</body>
+</html>

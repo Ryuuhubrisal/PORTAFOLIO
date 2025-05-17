@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Profesional | [Daniel]</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+    
+    <!-- Partículas de Fondo -->
+    <div id="particles-js"></div>
+    
+    <!-- Menú Flotante -->
+    <div class="floating-nav">
+        <div class="nav-dots">
+            <a href="#inicio" class="nav-dot active" data-tooltip="Inicio"></a>
+            <a href="#habilidades" class="nav-dot" data-tooltip="Habilidades"></a>
+            <a href="#proyectos" class="nav-dot" data-tooltip="Proyectos"></a>
+            <a href="#educacion" class="nav-dot" data-tooltip="Educación"></a>
+            <a href="#servicios" class="nav-dot" data-tooltip="Servicios"></a>
+            <a href="#contacto" class="nav-dot" data-tooltip="Contacto"></a>
+        </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <h1 class="logo glitch" data-text="PORTFOLIO">PORTFOLIO</h1>
+                <span class="logo-accent">.</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#inicio" class="nav-link hover-underline">Inicio</a>
+                <a href="#habilidades" class="nav-link hover-underline">Habilidades</a>
+                <a href="#proyectos" class="nav-link hover-underline">Proyectos</a>
+                <a href="#educacion" class="nav-link hover-underline">Educación</a>
+                <a href="#servicios" class="nav-link hover-underline">Servicios</a>
+                <a href="#contacto" class="nav-link hover-underline">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button theme-toggle floating-btn">
+                    <span class="material-icons">brightness_4</span>
+                </button>
+                <button id="menu-button" class="icon-button menu-button floating-btn">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-grid">
+            <div class="hero-image animate__animated animate__fadeIn">
+                <div class="image-container">
+                    <div class="gradient-border">
+                        <img src="logo.png" alt="Daniel" class="profile-image">
+                    </div>
+                    <div class="status-pulse"></div>
+                    <div class="tech-tags">
+                        <span class="tech-tag floating-tag">HTML5</span>
+                        <span class="tech-tag floating-tag">CSS3</span>
+                        <span class="tech-tag floating-tag">JS</span>
+                        <span class="tech-tag floating-tag">IA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-content animate__animated animate__fadeIn">
+                <div class="title-wrapper">
+                    <h2 class="hero-subtitle">Hola, soy</h2>
+                    <h1 class="hero-title">
+                        <span class="name-gradient">Daniel</span>
+                        <span class="title-underline"></span>
+                    </h1>
+                    <h3 class="hero-alias">"Ryuuhubrisal"</h3>
+                    <h3 class="hero-role">El conocimiento sin cuestionamiento es solo otra forma de ignorancia.</h3>
+                </div>
+                <p class="hero-description">
+                    Desarrollador autodidacta de apps Android y sitios web. Domino el uso de inteligencia artificial para crear soluciones prácticas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-hover-effect">
+                        <span class="btn-text">Contáctame</span>
+                        <span class="btn-hover"></span>
+                    </a>
+                    <a href="#proyectos" class="btn-outline-effect">
+                        <span class="btn-text">Ver Proyectos</span>
+                        <span class="btn-outline"></span>
+                    </a>
+                    <a href="bio.html" class="btn-outline-effect">
+            <span class="btn-text">Mi Biografía</span>
+            <span class="btn-outline"></span>
+        </a>
+                </div>
+                <div class="social-floating">
+    <a href="https://github.com/ryuuhubrisal" target="_blank" class="social-icon floating-icon" data-tooltip="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+    </a>
+    <a href="https://linkedin.com/in/ryuuhubrisal" target="_blank" class="social-icon floating-icon" data-tooltip="LinkedIn">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+    </a>
+    <a href="https://twitter.com/ryuuhubrisal" target="_blank" class="social-icon floating-icon" data-tooltip="Twitter">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="section skills-section">
+        <h2 class="section-title">Mis <span class="accent">Habilidades</span></h2>
+        <div class="skills-container">
+            <!-- Competencias Técnicas -->
+            <div class="skill-category card-hover-effect">
+                <h3 class="category-title">Competencias Técnicas</h3>
+                <div class="skills-grid">
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">settings</span>
+                        <p>Optimización de sistemas (Windows/Android)</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">bug_report</span>
+                        <p>Diagnóstico y solución de problemas técnicos</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">phone_android</span>
+                        <p>Desarrollo de apps Android y páginas web</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">autorenew</span>
+                        <p>Automatización con Excel y Google Sheets</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">image</span>
+                        <p>Edición de imágenes con IA</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">text_fields</span>
+                        <p>Redacción y edición de textos profesionales</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">slideshow</span>
+                        <p>Diseño de presentaciones en PowerPoint</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">security</span>
+                        <p>Privacidad digital y ciberseguridad básica</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">work</span>
+                        <p>Creación de portafolios y currículums digitales</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">smart_toy</span>
+                        <p>Uso de herramientas de IA y automatización</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">support_agent</span>
+                        <p>Asesoría tecnológica personalizada</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">speed</span>
+                        <p>Limpieza y optimización de sistemas</p>
+                    </div>
+                    <div class="skill-item animate-on-scroll">
+                        <span class="material-icons">analytics</span>
+                        <p>Análisis y presentación de datos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores Profesionales -->
+            <div class="skill-category card-hover-effect">
+                <h3 class="category-title">Valores Profesionales</h3>
+                <div class="values-grid">
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">psychology</span>
+                        </div>
+                        <h4>Pensamiento Analítico</h4>
+                        <p>Enfoque lógico y estructurado para resolver problemas complejos</p>
+                    </div>
+                    
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">flash_on</span>
+                        </div>
+                        <h4>Agilidad</h4>
+                        <p>Toma de decisiones rápida basada en datos y experiencia</p>
+                    </div>
+                    
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">diversity_3</span>
+                        </div>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Colaboración efectiva con profesionales multidisciplinarios</p>
+                    </div>
+                    
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">auto_awesome</span>
+                        </div>
+                        <h4>Adaptabilidad</h4>
+                        <p>Capacidad para ajustarme a nuevos entornos y tecnologías</p>
+                    </div>
+                    
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">workspace_premium</span>
+                        </div>
+                        <h4>Ética Profesional</h4>
+                        <p>Compromiso con estándares de calidad y responsabilidad</p>
+                    </div>
+                    
+                    <div class="value-item animate-on-scroll">
+                        <div class="value-icon">
+                            <span class="material-icons">trending_up</span>
+                        </div>
+                        <h4>Orientación a Resultados</h4>
+                        <p>Enfoque en objetivos medibles y entregables de valor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Misión y Visión -->
+    <section id="mision-vision" class="section mission-section">
+        <h2 class="section-title">Misión <span class="accent">&</span> Visión</h2>
+        <div class="mission-container">
+            <div class="mission-card card-hover-effect animate-on-scroll">
+                <div class="mission-icon">
+                    <span class="material-icons">flag</span>
+                </div>
+                <h3>Misión</h3>
+                <p>Proporcionar soluciones tecnológicas innovadoras y accesibles que empoderen a las personas y negocios para alcanzar su máximo potencial en el entorno digital, combinando creatividad, eficiencia y las últimas tendencias en desarrollo e inteligencia artificial.</p>
+            </div>
+            <div class="mission-card card-hover-effect animate-on-scroll">
+                <div class="mission-icon">
+                    <span class="material-icons">visibility</span>
+                </div>
+                <h3>Visión</h3>
+                <p>Ser reconocido como un referente en el desarrollo de herramientas digitales transformadoras que simplifiquen procesos complejos, democratizando el acceso a tecnología de calidad y contribuyendo a la evolución de la interacción humano-tecnología en Latinoamérica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+<section id="proyectos" class="section projects-section">
+    <h2 class="section-title">Mis <span class="accent">Proyectos</span></h2>
+    <div class="projects-container">
+        <div class="project-card card-hover-effect animate-on-scroll">
+            <div class="project-info">
+                <h3>Chatbot Experimental (Inspirado en Singularity) 🔮</h3>
+                <p>Un sistema conversacional modular diseñado para simular interacciones humanas básicas, con arquitectura inspirada en conceptos de <strong>Singularity</strong>. <em>Actualmente en fase de prototipo</em>.</p>
+                
+                <div class="project-tags">
+                    <span class="tag">Chatbot</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Web</span>
+                    <span class="tag">Experimental</span>
+                </div>
+                
+                <div class="project-features">
+                    <h4>¿Qué incluye?</h4>
+                    <ul>
+                        <li>Interfaz conversacional simple</li>
+                        <li>Lógica basada en reglas y patrones</li>
+                        <li>Integración con APIs básicas</li>
+                        <li>Prototipo funcional (no es una IA avanzada)</li>
+                    </ul>
+                </div>
+                
+                <!-- Botón principal que redirige a GitHub -->
+                <a href="https://github.com/Ryuuhubrisal" target="_blank" class="button outlined" style="margin-bottom: 1.5rem;">
+                    <i class="fas fa-external-link-alt"></i> Ver proyectos públicos en GitHub
+                </a>
+                
+                <!-- Mensaje con espaciado y proyectos privados -->
+                <div class="project-footer" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed #ccc;">
+                    <p class="disclaimer"><small>💻 <em>Además de mis proyectos públicos, desarrollo soluciones privadas para clientes seleccionados. <br>¿Interesado? <a href="#contacto">Contáctame</a> para más información.</em></small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Educación - Versión Clásica Mejorada -->
+<section id="educacion" class="section education-section">
+    <h2 class="section-title">Mi <span class="accent">Educación</span></h2>
+    <div class="education-container">
+        <div class="education-timeline">
+            
+            <!-- 2024 -->
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Análisis de Inteligencia Estratégica</h3>
+                    <p class="education-type">Curso Avanzado</p>
+                    <p class="education-institution">Policía Nacional de Colombia - Institución Universitaria</p>
+                </div>
+            </div>
+
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Taller Práctico de Análisis Criminal</h3>
+                    <p class="education-type">Taller Internacional</p>
+                    <p class="education-institution">USAID</p>
+                </div>
+            </div>
+
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Pensamiento Crítico para Analistas</h3>
+                    <p class="education-type">Certificación</p>
+                    <p class="education-institution">IACA</p>
+                </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Fundamentos del Análisis del Crimen</h3>
+                    <p class="education-type">Certificación</p>
+                    <p class="education-institution">IACA</p>
+                </div>
+            </div>
+
+            <!-- 2018 -->
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2018</div>
+                <div class="timeline-content">
+                    <h3>Bachillerato Completo</h3>
+                    <p class="education-type">Educación Secundaria</p>
+                    <p class="education-institution">Ministerio de Educación</p>
+                </div>
+            </div>
+
+            <!-- 2017 -->
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2017</div>
+                <div class="timeline-content">
+                    <h3>Certificación en Tecnologías Digitales</h3>
+                    <p class="education-type">Programa Integral</p>
+                    <p class="education-institution">INFOTEP</p>
+                    <div class="education-details">
+                        <span>• Office</span>
+                        <span>• PowerPoint</span>
+                        <span>• Diseño Web</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2015 -->
+            <div class="timeline-item animate-on-scroll">
+                <div class="timeline-date">2015</div>
+                <div class="timeline-content">
+                    <h3>Educación Financiera</h3>
+                    <p class="education-type">Programa Certificado</p>
+                    <p class="education-institution">ASPIRE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Servicios -->
+<section id="servicios" class="section services-section">
+    <h2 class="section-title">Mis <span class="accent">Servicios</span></h2>
+    <div class="services-container">
+        <!-- SOPORTE TECNOLÓGICO -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="soporte">
+            <div class="service-icon">
+                <span class="material-icons">build</span>
+            </div>
+            <h3>Soporte Tecnológico Integral</h3>
+            <p>Soluciones completas para el mantenimiento, reparación y optimización de tus equipos.</p>
+            <ul class="service-features">
+                <li><strong>Optimización de dispositivos:</strong> Windows y Android</li>
+                <li><strong>Diagnóstico remoto:</strong> Identificación y solución de problemas</li>
+                <li><strong>Instalación profesional:</strong> Software y aplicaciones</li>
+                <li><strong>Recuperación de datos:</strong> Fotos, documentos, contactos</li>
+            </ul>
+        </div>
+
+        <!-- CAPACITACIÓN DIGITAL -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="capacitacion">
+            <div class="service-icon">
+                <span class="material-icons">school</span>
+            </div>
+            <h3>Capacitación Digital</h3>
+            <p>Aprende habilidades digitales esenciales para el entorno actual con clases prácticas y personalizadas.</p>
+            <ul class="service-features">
+                <li><strong>Programas de formación:</strong> Clases online/prácticas</li>
+                <li><strong>Herramientas digitales:</strong> Google Workspace, Office (incluidas en clase)</li>
+                <li><strong>Redes sociales:</strong> Uso profesional y seguridad</li>
+                <li><strong>Próximamente:</strong> Cursos estructurados por niveles</li>
+            </ul>
+        </div>
+
+        <!-- DISEÑO GRÁFICO -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="diseno">
+            <div class="service-icon">
+                <span class="material-icons">palette</span>
+            </div>
+            <h3>Diseño Gráfico Profesional</h3>
+            <p>Crea una imagen visual memorable con diseños únicos para tu marca o proyecto personal.</p>
+            <ul class="service-features">
+                <li><strong>Logotipos:</strong> Diseño de identidad visual</li>
+                <li><strong>Edición de imágenes:</strong> Productos, retratos, fondos</li>
+                <li><strong>Material publicitario:</strong> Flyers, banners, posts</li>
+                <li><strong>Plantillas reutilizables:</strong> Para redes sociales</li>
+            </ul>
+        </div>
+
+        <!-- AUTOMATIZACIÓN -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="automatizacion">
+            <div class="service-icon">
+                <span class="material-icons">description</span>
+            </div>
+            <h3>Automatización y Productividad</h3>
+            <p>Optimiza tus procesos con herramientas digitales personalizadas y automatizaciones prácticas.</p>
+            <ul class="service-features">
+                <li><strong>Plantillas Excel:</strong> Inventarios, facturas, control</li>
+                <li><strong>Documentos profesionales:</strong> CVs, informes, presentaciones</li>
+                <li><strong>Flujos de trabajo:</strong> Automatización de procesos</li>
+                <li><strong>Presentaciones:</strong> PowerPoint impactantes</li>
+            </ul>
+        </div>
+
+        <!-- DESARROLLO WEB -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="web">
+            <div class="service-icon">
+                <span class="material-icons">code</span>
+            </div>
+            <h3>Desarrollo Web Económico</h3>
+            <p>Sitios web funcionales, optimizados y adaptados a tu imagen profesional o emprendimiento.</p>
+            <ul class="service-features">
+                <li><strong>Sitios web básicos:</strong> 1-5 páginas (HTML/CSS)</li>
+                <li><strong>Landing pages:</strong> Para productos o servicios</li>
+                <li><strong>Portafolios digitales:</strong> Para profesionales</li>
+                <li><strong>Optimización:</strong> Velocidad y SEO básico</li>
+            </ul>
+        </div>
+
+        <!-- SEGURIDAD DIGITAL -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="seguridad">
+            <div class="service-icon">
+                <span class="material-icons">security</span>
+            </div>
+            <h3>Seguridad Digital</h3>
+            <p>Protege tu información, tus dispositivos y tu identidad digital de amenazas y vulnerabilidades.</p>
+            <ul class="service-features">
+                <li><strong>Protección de dispositivos:</strong> Antivirus, firewall</li>
+                <li><strong>Seguridad en redes:</strong> WiFi seguro, conexiones</li>
+                <li><strong>Peligros en redes sociales:</strong> Identificación de riesgos</li>
+                <li><strong>Huella digital:</strong> Gestión de información personal online</li>
+            </ul>
+        </div>
+
+        <!-- APPS MÓVILES -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="apps">
+            <div class="service-icon">
+                <span class="material-icons">phone_android</span>
+            </div>
+            <h3>Apps Móviles Básicas</h3>
+            <p>Desarrollo de aplicaciones móviles simples para negocios y emprendimientos en crecimiento.</p>
+            <ul class="service-features">
+                <li><strong>Apps informativas:</strong> Para pequeños negocios</li>
+                <li><strong>Catálogos digitales:</strong> Mostrar productos/servicios</li>
+                <li><strong>Apps personalizadas:</strong> Soluciones simples</li>
+                <li><strong>Desarrollo básico:</strong> Aplicaciones funcionales</li>
+            </ul>
+        </div>
+
+        <!-- PAQUETES EMPRENDEDORES -->
+        <div class="service-card card-hover-effect animate-on-scroll" data-service="paquetes">
+            <div class="service-icon">
+                <span class="material-icons">business_center</span>
+            </div>
+            <h3>Paquetes para Emprendedores</h3>
+            <p>Todo lo esencial para comenzar con presencia profesional y estructura funcional.</p>
+            <ul class="service-features">
+                <li><strong>Identidad visual básica:</strong> Logo + paleta de colores</li>
+                <li><strong>Presencia digital:</strong> Configuración profesional</li>
+                <li><strong>Material digital:</strong> Plantillas para posts</li>
+                <li><strong>Asesoría inicial:</strong> 2 horas de capacitación</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Comentarios -->
+<section id="comentarios" class="section comments-section">
+    <h2 class="section-title">Comentarios <span class="accent">de Clientes</span></h2>
+    <div class="comments-container">
+        <!-- Comentario 1 - Dueño de colmado -->
+        <div class="comment-card card-hover-effect animate-on-scroll">
+            <div class="comment-header">
+                <div class="comment-author">
+                    <div class="comment-avatar" style="background-color: #ff9966; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-weight: bold;">CM</div>
+                    <div>
+                        <h4>Carlos Mendoza</h4>
+                        <p>Dueño de "Tienda El Ahorro"</p>
+                    </div>
+                </div>
+                <div class="comment-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>Contacté a Daniel porque necesitaba ordenar el inventario de mi tienda. En solo dos semanas implementó un sistema perfecto que ahora uso desde mi teléfono. Lo mejor es que me enseñó personalmente a usarlo y sigue disponible cuando tengo dudas. ¡Mi negocio funciona mucho mejor desde entonces!</p>
+            </div>
+        </div>
+
+        <!-- Comentario 2 - Configuración móvil -->
+        <div class="comment-card card-hover-effect animate-on-scroll">
+            <div class="comment-header">
+                <div class="comment-author">
+                    <div class="comment-avatar" style="background-color: #66ccff; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-weight: bold;">MF</div>
+                    <div>
+                        <h4>María Fernández</h4>
+                        <p>Dueña de "Boutique Elegance"</p>
+                    </div>
+                </div>
+                <div class="comment-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star_half</span>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>No sabía nada de tecnología hasta que Daniel me ayudó. Configuró mi teléfono para manejar inventarios, clientes y pagos. Lo que más valoro es su paciencia para explicarme todo varias veces hasta que lo entendí. Ahora administro mi negocio desde cualquier lugar con confianza.</p>
+            </div>
+        </div>
+
+        <!-- Comentario 3 - Página web ebanistería -->
+        <div class="comment-card card-hover-effect animate-on-scroll">
+            <div class="comment-header">
+                <div class="comment-author">
+                    <div class="comment-avatar" style="background-color: #99cc66; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-weight: bold;">RV</div>
+                    <div>
+                        <h4>Roberto Vargas</h4>
+                        <p>Maestro ebanista</p>
+                    </div>
+                </div>
+                <div class="comment-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>Daniel entendió exactamente lo que necesitaba para mostrar mi trabajo. Creó una página web donde mis muebles se ven espectaculares, con fotos que parecen profesionales y un sistema fácil para actualizar mis nuevos diseños. Ya recibí 5 pedidos nuevos gracias al sitio.</p>
+            </div>
+        </div>
+
+        <!-- Comentario 4 - Aplicación nutrición -->
+        <div class="comment-card card-hover-effect animate-on-scroll">
+            <div class="comment-header">
+                <div class="comment-author">
+                    <div class="comment-avatar" style="background-color: #ff66cc; color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-weight: bold;">LR</div>
+                    <div>
+                        <h4>Lucía Ramírez</h4>
+                        <p>Nutricionista profesional</p>
+                    </div>
+                </div>
+                <div class="comment-rating">
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                    <span class="material-icons">star</span>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>La aplicación que Daniel desarrolló para mi consultorio es increíble. Mis pacientes pueden registrar sus comidas, ver sus planes alimenticios y comunicarse conmigo fácilmente. Lo más valioso fue cómo adaptó cada función a mi metodología de trabajo. ¡Totalmente recomendado!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Contacto - Versión mejorada -->
+<section id="contacto" class="section contact-section">
+    <h2 class="section-title">Contácta<span class="accent">me</span></h2>
+    <div class="contact-container">
+        <div class="contact-info card-hover-effect animate-on-scroll">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+                <span class="material-icons">email</span>
+                <p>ryuuhubrisal@proton.me</p>
+            </div>
+            <div class="contact-item">
+                <span class="material-icons">location_on</span>
+                <p>Santo Domingo, República Dominicana</p>
+            </div>
+
+            <p class="contact-message">¿Tienes dudas? Escríbeme por cualquiera de estos medios:</p>
+
+            <!-- Redes sociales - Versión mejorada manteniendo tu estructura -->
+            <div class="social-links" style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                margin-top: 20px;
+            ">
+                <a href="https://github.com/ryuuhubrisal" target="_blank" class="social-icon floating-icon" 
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://linkedin.com/in/ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://twitter.com/ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://www.facebook.com/Ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://instagram.com/ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://youtube.com/@ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://www.tiktok.com/@ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://t.me/ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" 
+                         style="width: 24px; height: 24px;">
+                </a>
+                
+                <a href="https://www.reddit.com/user/ryuuhubrisal" target="_blank" class="social-icon floating-icon"
+                   style="
+                       display: inline-flex;
+                       width: 44px;
+                       height: 44px;
+                       border-radius: 50%;
+                       background: #f0f0f0;
+                       align-items: center;
+                       justify-content: center;
+                       transition: all 0.3s ease;
+                   ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111589.png" alt="Reddit" 
+                         style="width: 24px; height: 24px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo">Daniel<span class="accent">.</span></h3>
+                <p class="footer-text">Desarrollador autodidacta de apps Android y sitios web. Domino el uso de inteligencia artificial para crear soluciones prácticas.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Enlaces rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio" class="footer-link hover-underline">Inicio</a></li>
+                    <li><a href="#habilidades" class="footer-link hover-underline">Habilidades</a></li>
+                    <li><a href="#proyectos" class="footer-link hover-underline">Proyectos</a></li>
+                    <li><a href="#contacto" class="footer-link hover-underline">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+    <p class="footer-legal">
+        © 2025 Ryuuhubrisal — 
+        <a href="https://github.com/Ryuuhubrisal/PORTAFOLIO/blob/main/LICENSE.md" target="_blank">PFNC 1.0.0</a>
+    </p>
+</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
