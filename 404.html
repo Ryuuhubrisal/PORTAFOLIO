@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex">
+  <title>Error 404 | Página no encontrada</title>
+
+  <!-- Fuentes y estilos externos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    :root {
+      --color-fondo-claro: #ffffff;
+      --color-fondo-oscuro: #000000;
+      --color-rojo: #e74c3c;
+      --color-texto-claro: #111111;
+      --color-texto-oscuro: #ffffff;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .light-theme {
+      background-color: var(--color-fondo-claro);
+      color: var(--color-rojo);
+    }
+
+    .dark-theme {
+      background-color: var(--color-fondo-oscuro);
+      color: var(--color-rojo);
+    }
+
+    .container {
+      padding: 8rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 900;
+      color: var(--color-rojo);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 1rem 2rem;
+      background-color: var(--color-rojo);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0.6rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #c0392b;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--color-rojo);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      transition: transform 0.1s ease, background-color 0.2s ease;
+      mix-blend-mode: difference;
+    }
+
+    a:hover ~ .custom-cursor {
+      transform: scale(1.5);
+      background-color: var(--color-rojo);
+    }
+  </style>
+</head>
+<body>
+  <!-- Cursor personalizado -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- Partículas -->
+  <div id="particles-js"></div>
+
+  <!-- Contenido -->
+  <div class="container animate__animated animate__fadeIn">
+    <h1>Error 404</h1>
+    <p>La página que buscas no existe o ha sido eliminada.</p>
+    <a href="index.html">Volver al inicio</a>
+  </div>
+
+  <!-- Partículas desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    // Detectar tema del sistema
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = prefersDark ? 'dark-theme' : 'light-theme';
+    document.body.classList.add(theme);
+
+    // Cursor personalizado
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+
+    // Configuración de partículas
+    const redColor = "#e74c3c";
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: redColor },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: redColor,
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 3,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
